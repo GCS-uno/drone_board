@@ -1,0 +1,19 @@
+{
+  "name": "drone_board",
+  "version": "1.0.0",
+  "description": "Бортовая часть",
+  "main": "drone.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nee77@bitbucket.org/nee77/drone_board.git"
+  },
+  "author": "nee77",
+  "license": "ISC",
+  "dependencies": {
+    "mavlink": "^1.0.1",
+    "socket.io-client": "^2.1.1"
+  }
+}

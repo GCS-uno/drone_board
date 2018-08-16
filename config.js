@@ -1,9 +1,9 @@
 const config = {
 
     // GCS.uno MAVLink server
-    MAVLINK_SERVER: 'http://192.168.1.100:8091'
+    MAVLINK_SERVER: 'https://mavlink.gcs.uno:443'
 
-    // UDP хост и порт куда приходят сообщения mavlink
+    // Local UDP host and port to which MAVProxy streams messages from Ardupilot
     , MAVLINK_LOCAL_UDP_HOST: '127.0.0.1'
     , MAVLINK_LOCAL_UDP_PORT: 15001
 

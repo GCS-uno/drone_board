@@ -1,9 +1,12 @@
 
-# GCS.uno drone_board
+# GCS.uno board scripts
 
 This scripts are used to connect board companion computers to web-based ground control station [GCS.uno](https://www.gcs.uno) over 4G networks.
 
-Check our [Wiki](https://github.com/GCS-uno/drone_board/wiki) to learn how to install and configure.
+
+[Pilot's dashboard](https://pilot.gsc.uno)
+[Documentation on GitBook](https://gcs.gitbook.io/)
+[GCS.uno website](https://www.gcs.uno)
 
 
 

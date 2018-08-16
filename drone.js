@@ -20,7 +20,7 @@ let udp_out_msgs = [];
 let mav_messages = 0;
 
 mav_socket.on('connect', () => {
-    console.log("Connected to MAVLink server");
+    console.log("Successfully connected to MAVLink server");
     io_connected = true;
 });
 
@@ -30,17 +30,16 @@ mav_socket.on('disconnect', () => {
 });
 
 mav_socket.on('error', () => {
-    console.log('MAVLink server error');
+    console.log('ERROR in MAVLink server connection 1');
     io_connected = false;
 });
 
 mav_socket.on('connect_error', () => {
-    console.log('MAVLink server connect error');
+    console.log('ERROR in MAVLink server connection 2');
     io_connected = false;
 });
 
 mav_socket.on('mav', (data) => {
-    console.log('MAV from server');
     udp_out_msgs.push(data);
 });
 

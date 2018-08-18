@@ -40,6 +40,7 @@ mav_socket.on('connect_error', () => {
 });
 
 mav_socket.on('mav', (data) => {
+    console.log('mav from server');
     udp_out_msgs.push(data);
 });
 

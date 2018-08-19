@@ -44,6 +44,11 @@ mav_socket.on('mav', (data) => {
     udp_out_msgs.push(data);
 });
 
+mav_socket.on('ping1', (seq) => {
+    console.log('ping ' + seq);
+    if( seq && io_connected ) mav_socket.emit('pong1', seq);
+});
+
 udp_server.bind(config.MAVLINK_LOCAL_UDP_PORT, config.MAVLINK_LOCAL_UDP_HOST);
 
 udp_server.on('listening', function () {
